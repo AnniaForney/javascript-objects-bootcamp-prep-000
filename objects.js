@@ -3,14 +3,13 @@ var playlist = {
 'Cardi B': 'Ring'
 };
 
-var updatePlaylist = (playlist, artist, song) ;{
-  Pop['Tayla Parx'] = 'I Want You',
-  Rap['J Cole'] = 'Middle',
-  Alternative ['Tame Impala'] = 'Alter Ego';
-  return playlist;
-}
+var updatePlaylist = (playlist, artist, song) => {
+  // playlist['Tayla Parx'] ='I Want You',
 
-var removeFromPlaylist = (playlist, artist) ;{
-  delete Pop['Tayla Parx'];
+  return playlist[artist] = song;
+};
+
+var removeFromPlaylist = (playlist, artist) => {
+  delete playlist[artist]
   return playlist;
-}
+};
